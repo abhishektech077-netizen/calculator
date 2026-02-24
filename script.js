@@ -19,7 +19,7 @@ document.addEventListener("keydown", function(event) {
     if ((key >= "0" && key <= "9") || ["+", "-", "*", "/", "."].includes(key)) {
         appendToDisplay(key);
     } 
-    // Enter key for equals
+    
     else if (key === "Enter") {
         event.preventDefault(); 
         calculate();
@@ -31,4 +31,5 @@ document.addEventListener("keydown", function(event) {
     else if (key === "Backspace") {
         display.value = display.value.slice(0, -1);
     }
+
 });
